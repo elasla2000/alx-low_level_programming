@@ -6,6 +6,7 @@
  * Return: Always 0
 */
 int main(void)
+{	
 char ch = 'z'; /* Start with 'z', the last lowercase alphabet */    
 while (ch >= 'a') /* Loop from 'z' down to 'a' */
 putchar(ch); /* Print the current character */
