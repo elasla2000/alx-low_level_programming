@@ -1,16 +1,18 @@
 #include<stdio.h>
 
-/**
- * main - This is the main function
+/*
+ * main - Entry point
  *
- * Return: Always 0
+ * Return: Always 0 (Success)
 */
 int main(void)
-{	
-char ch = 'z'; /* Start with 'z', the last lowercase alphabet */    
-while (ch >= 'a') /* Loop from 'z' down to 'a' */
-putchar(ch); /* Print the current character */
-ch--;        /* Move to the previous character in reverse order */    
-putchar('\n'); /* Print a newline character at the end */
+{
+char ch = 'z';
+while (ch >= 'a')
+{
+        putchar (ch);
+        ch--;
+}
+putchar('\n');
 return (0);
 }
