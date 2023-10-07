@@ -1,29 +1,28 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
- * main - Entry point
+ * main - Entry point of the program
  *
- * Description: print alphabet in lowercase then in uppercase
+ * Description: Prints the alphabet without the letters 'q' and 'e'.
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-char ch = 'a';
-char CH = 'A';
-/*prints a - z*/
-while (ch <= 'z')
+int i;
+
+for (i = 97; i < 123; i++)
 {
-putchar(ch);
-ch++;
-}
-/*prints A - Z*/
-while (CH <= 'Z')
+if (i != 101 && i != 113)
 {
-putchar(CH);
-CH++;
+putchar(i);
 }
+}
+
 putchar('\n');
+
 return (0);
 }
