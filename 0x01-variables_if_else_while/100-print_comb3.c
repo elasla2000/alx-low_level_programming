@@ -1,33 +1,28 @@
-#include <stdlib.h>
-
-#include <time.h>
-
 #include <stdio.h>
 /**
- * main - Entry point
- * descripton: Prints the last digit of a randomly generated number
- * and whether it is greater than 5, less than 6.
- * Return: Always 0.
+ * main - entry point
+ * Description: prints all possible different combinations of two digits
+ * Return: ALways 0 (Success)
 */
 int main(void)
 {
-int n;
-srand(time(0));
-n = rand() - RAND_MAX / 2;
-if ((n % 10) > 5)
+int n, m;
+for (n = 48; n <= 56; n++)
 {
-printf("Last digit of %d is %d and is greater than 5\n",
-n, n % 10);
-}
-else if ((n % 10) < 6 && (n % 10) != 0)
+for (m = 49; m <= 57; m++)
 {
-printf("Last digit of %d is %d and is less than 6 and not 0\n",
-n, n % 10);
-}
-else
+if (m > n)
 {
-printf("Last digit of %d is %d and is 0\n",
-n, n % 10);
+putchar(n);
+putchar(m);
+if (n != 56 || m != 57)
+{
+putchar(',');
+putchar(' ');
 }
+}
+}
+}
+putchar('\n');
 return (0);
 }
