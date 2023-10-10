@@ -4,5 +4,6 @@
 #include <stdio.h>
 
 int _puthcar(char c);
+void print_alphabet(void);
 
 #endif
