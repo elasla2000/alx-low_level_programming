@@ -4,15 +4,12 @@
  * Description: prints _putchar using putchar prototype
  * Return: Always 0 (Success)
 */
-
 int main(void)
 {
-	char str[] = "_putchar";
-	int ch;
-
-	for (ch = 0; ch < 8; ch++)
-		-putchar(str[ch]);
-	_putchar('\n');
-
-	return (0);
+char str[] = "_putchar";
+int ch;
+for (ch = 0; ch < 8; ch++)
+_putchar(str[ch]); // Change the hyphen to an underscore and add a semicolon here
+_putchar('\n'); // Correct the function name to _putchar
+return (0);
 }
